@@ -21,9 +21,13 @@
         <div class="card-box text-center p-4">
           <h1 class="text-uppercase fs-6">Advice #<span id="advice-id"></span></h1>
           <p id="advice-text" class="fs-4 fw-bold"></p>
-          <img src="images/pattern-divider-desktop.svg" alt="Divider pattern" class="divider-image mb-4">
+          <picture>
+            <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 768px)">
+            <img src="images/pattern-divider-mobile.svg" alt="Divider pattern" class="divider-image mb-4">
+          </picture>
+
           <button id="dice-button" class="btn rounded-circle p-3">
-            <img src="images/icon-dice.svg" alt="Generate advice" />
+            <img src="images/icon-dice.svg" alt="Generate advice">
           </button>
         </div>
     </div>
