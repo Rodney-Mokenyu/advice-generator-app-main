@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* primary colors*/
+    --blue-200: hsl(193, 38%, 86%);
+    --green-300: hsl(150, 100%, 66%);
+
+    /* Neutral */
+    --blue-600: hsl(217, 19%, 38%);
+    --blue-900: hsl(217, 19%, 24%);
+    --blue-950: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--blue-950);
+    font-family: 'Manrope', sans-serif;
+}
+
+.card-box {
+    background-color: var(--blue-900);
+    border: 0.1rem solid var(--blue-600);
+    border-radius: 1rem;
+    inline-size: min(90vw, 400px);
+    color: var(--blue-200);
+    padding: 0rem 1rem;
+    position: relative;
+}
+
+.card-box h1 {
+    color: var(--green-300);
+    text-align: center;
+    margin: 1.0rem 0;
+}
+
+.divider-image {
+   max-width: 100%;
+    display: block;
+    margin: 2rem auto;
+    align-self: center;
+}
+
+
+
+
+
+#dice-button {
+    background-color: var(--green-300);
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#dice-button:hover {
+    background-color: hsl(150, 100%, 76%);
+    box-shadow: 0 0  0.625rem hsl(150, 100%, 76%);
+   
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 48em) {
+  .card-box {
+    padding: 0rem 2rem;
+    
+  }
+
+  #dice-button {
+    bottom: -2rem;
+  }
+}
