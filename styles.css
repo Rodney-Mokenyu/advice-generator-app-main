@@ -20,7 +20,11 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
+.container {
+    min-height: 21rem;
+}
 .card-box {
+    min-block-size: 21rem;
     background-color: var(--blue-900);
     border: 0.1rem solid var(--blue-600);
     border-radius: 1rem;
@@ -37,10 +41,13 @@ body {
 }
 
 .divider-image {
-   max-width: 100%;
+    position : relative;
+    inline-size: 90%;
     display: block;
-    margin: 2rem auto;
+    margin-top: 6rem;
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -69,7 +76,4 @@ body {
     
   }
 
-  #dice-button {
-    bottom: -2rem;
-  }
 }
